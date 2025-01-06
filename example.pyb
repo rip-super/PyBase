@@ -1,0 +1,61 @@
+# This script is an example of what you can do in PyBase
+
+// Multi-line comments can explain sections of code
+   Below, we declare variables and work with functions //
+
+# Variable declarations
+VAR greeting = "Hello"
+VAR name = "Bob"
+VAR numbers = [1, 2, 3, 4, 5]
+
+# A function to square a number
+FUNC square(num) -> num * num
+
+# A function to repeat a message
+FUNC repeat(message, times)
+    VAR result = ""
+    FOR i = 0 TO times THEN
+        VAR result = result + message + " "
+    END
+
+    RETURN result
+END
+
+# Print a greeting
+PRINT(greeting + ", " + name + "!")
+
+# Use a for-loop to square numbers
+PRINT("Squares of numbers from 1 to 5:")
+FOR num = 0 TO LEN(numbers) THEN
+    PRINT(square(numbers / num))
+END
+
+# Demonstrating the "JOIN" and "MAP" functions
+VAR words = ["py", "base", "rocks"]
+PRINT("Normal words: ")
+PRINT(JOIN(words, ", "))
+PRINT("Exicted words: ")
+PRINT(JOIN(MAP(words, FUNC(word) -> word + "!"), ", "))
+
+# Using conditional logic
+VAR age = 20
+IF age >= 18 THEN
+    PRINT("You are an adult.")
+ELSE
+    PRINT("You are a minor.")
+END
+
+# Using a while loop to count down
+PRINT("Countdown:")
+VAR count = 5
+WHILE count > 0 THEN
+    PRINT(count)
+    VAR count = count - 1
+END
+
+# Using a custom function
+VAR excitement = repeat("yes!", 3)
+PRINT("are you excited??")
+PRINT(excitement)
+
+// end of the greatest script ever trust //
