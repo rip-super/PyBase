@@ -1,4 +1,4 @@
-### This is PyBase: A BASIC-like language with an intrepreter written completely in Python!
+### This is PyBase: A BASIC-like language with an interpreter written completely in Python!
 
 # PyBase Programming Language Documentation
 
